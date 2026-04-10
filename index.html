@@ -38,10 +38,10 @@
       
       .menu {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 35px;
+        right: 35px;
         display: flex;
-        gap: 24px;
+        gap: 42px;
         font-size: 2rem;
         line-height: 1;
         font-weight: 400;
@@ -51,6 +51,9 @@
       .menu a {
         color: #F28C28;
         text-decoration: none;
+        display: inline-block;
+        transform: scaleY(2) scaleX(1.4);
+        transform-origin: right;
       }
       
       .menu a.greenroom {
@@ -60,11 +63,11 @@
       @media (max-width: 767px) {
         .menu {
           top: auto;
-          right: 20px;
-          bottom: 20px;
+          right: 35px;
+          bottom: 35px;
           flex-direction: column;
           align-items: flex-end;
-          gap: 10px;
+          gap: 18px;
           font-size: 2rem;
         }
       }
