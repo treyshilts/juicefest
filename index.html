@@ -15,38 +15,10 @@
       body {
         background-image: url("timewarp02.jpg");
         background-size: cover;
-        background-position: 0% 100%;
+        background-position: left bottom;
         background-repeat: no-repeat;
         overflow: hidden;
         font-family: Arial, sans-serif;
-      }
-      
-      /* large desktop */
-      @media (max-width: 1200px) {
-        body {
-          background-position: 15% 100%;
-        }
-      }
-      
-      /* small desktop / tablet */
-      @media (max-width: 1000px) {
-        body {
-          background-position: 25% 100%;
-        }
-      }
-      
-      /* tablet */
-      @media (max-width: 850px) {
-        body {
-          background-position: 35% 100%;
-        }
-      }
-      
-      /* mobile */
-      @media (max-width: 767px) {
-        body {
-          background-position: 50% 100%;
-        }
       }
 
       .title {
@@ -61,21 +33,22 @@
         font-weight: 900;
         letter-spacing: -0.1em;
         transform: scaleY(2.5) scaleX(0.7);
-        transform-origin: center;
+        transform-origin: top left;
       }
-      
+
       .menu {
         position: absolute;
         top: 35px;
         right: 35px;
         display: flex;
+        gap: 42px;
         gap: 75px;
         font-size: 2rem;
         line-height: 1;
         font-weight: 400;
         text-transform: lowercase;
       }
-      
+
       .menu a {
         color: #F28C28;
         text-decoration: none;
@@ -83,11 +56,11 @@
         transform: scaleY(2) scaleX(1.4);
         transform-origin: right;
       }
-      
+
       .menu a.greenroom {
         color: #36B030;
       }
-      
+
       @media (max-width: 767px) {
         .menu {
           top: auto;
