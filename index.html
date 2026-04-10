@@ -35,7 +35,39 @@
         transform: scaleY(2.5) scaleX(0.7);
         transform-origin: top left;
       }
-
+      
+      .menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 24px;
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: 400;
+        text-transform: lowercase;
+      }
+      
+      .menu a {
+        color: #F28C28;
+        text-decoration: none;
+      }
+      
+      .menu a.greenroom {
+        color: #36B030;
+      }
+      
+      @media (max-width: 767px) {
+        .menu {
+          top: auto;
+          right: 20px;
+          bottom: 20px;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 10px;
+          font-size: 2rem;
+        }
+      }
       @media (min-width: 768px) {
         .title {
           font-size: 12vw;
@@ -45,5 +77,11 @@
   </head>
   <body>
     <h1 class="title">juicefest</h1>
+    <nav class="menu">
+    <a href="#">archive</a>
+    <a href="#">blog</a>
+    <a href="#">about</a>
+    <a href="#" class="greenroom">greenroom</a>
+</nav>
   </body>
 </html>
