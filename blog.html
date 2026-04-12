@@ -1,83 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>blog</title>
+<html>
+<head> 
+    <title>interstate semiotics</title> 
     <style>
-      html,
-      body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      body {
-        background-color: yellow;
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-      }
-
-      .title {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        margin: 0;
-        color: #F28C28;
-        text-transform: lowercase;
-        font-size: 15vw;
-        line-height: 0.8;
-        font-weight: 900;
-        letter-spacing: -0.1em;
-        transform: scaleY(2.5) scaleX(0.7);
-        transform-origin: top left;
-      }
-
-      .menu {
-        position: absolute;
-        top: 35px;
-        right: 35px;
-        display: flex;
-        gap: 42px;
-        gap: 50px;
-        font-size: 2.5rem;
-        line-height: 1;
-        font-weight: 400;
-        text-transform: lowercase;
-      }
-
-      .menu a {
-        color: #F28C28;
-        text-decoration: none;
-        display: inline-block;
-        transform: scaleY(1.7) scaleX(1);
-        transform-origin: right;
-      }
-
-      .menu a.greenroom {
-        color: #36B030;
-      }
-
-      @media (max-width: 1100px) {
-        .menu {
-          top: auto;
-          right: 35px;
-          bottom: 35px;
-          flex-direction: column;
-          align-items: flex-end;
-          gap: 18px;
-          font-size: 2.5rem;
-        }
-      }
-      @media (min-width: 1101px) {
-        .title {
-          font-size: 12vw;
-        }
-      }
-          <style>
         body { font-family: "Times New Roman", serif; } 
 
         /* Default image size (for larger screens) */
@@ -91,72 +16,169 @@
             .featured-image {
                 width: 50%; /* 30% larger than the default 20% */
             }
-            body *::-webkit-scrollbar {
-          width: 16px;
-          height: 16px;
-          background: none;
-        }
-        
-        body *::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-button {
-          width: 16px;
-          height: 16px;
-          background: silver;
-          box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
-          border: 1px solid;
-          border-color: silver #000 #000 silver;
-        }
-        
-        body *::-webkit-scrollbar-track {
-          image-rendering: optimizeSpeed;
-          image-rendering: pixelated;
-          image-rendering: optimize-contrast;
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
-          background-position: 0 0;
-          background-repeat: repeat;
-          background-size: 2px;
-        }
-        
-        body *::-webkit-scrollbar-button {
-          background-repeat: no-repeat;
-          background-size: 16px;
-        }
-        
-        body *::-webkit-scrollbar-button:single-button:vertical:decrement {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
-        }
-        
-        body *::-webkit-scrollbar-button:single-button:vertical:increment {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
-        }
-        
-        body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
-        }
-        
-        body *::-webkit-scrollbar-button:single-button:horizontal:increment {
-          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
-        }
-        
-        body *::-webkit-scrollbar-corner {
-          background: silver;
-        }
-        
-        #questionModal {
-          display: none;
-          align-items: center;
-          justify-content: center;
-        }
-        
-        @media screen and (max-width: 500px) {
-          #questionModal div {
-            width: 90%;
-            padding: 15px;
-          }
-        }
+    body *::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: none;
+}
+
+body *::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-button {
+  width: 16px;
+  height: 16px;
+  background: silver;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px gray;
+  border: 1px solid;
+  border-color: silver #000 #000 silver;
+}
+
+body *::-webkit-scrollbar-track {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
+  image-rendering: optimize-contrast;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAyIDIiIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+CjxtZXRhZGF0YT5NYWRlIHdpdGggUGl4ZWxzIHRvIFN2ZyBodHRwczovL2NvZGVwZW4uaW8vc2hzaGF3L3Blbi9YYnh2Tmo8L21ldGFkYXRhPgo8cGF0aCBzdHJva2U9IiNjMGMwYzAiIGQ9Ik0wIDBoMU0xIDFoMSIgLz4KPC9zdmc+");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 2px;
+}
+
+body *::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTcgNWgxTTYgNmgzTTUgN2g1TTQgOGg3IiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTQgNWg3TTUgNmg1TTYgN2gzTTcgOGgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTggM2gxTTcgNGgyTTYgNWgzTTUgNmg0TTYgN2gzTTcgOGgyTTggOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTAuNSAxNiAxNiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KPG1ldGFkYXRhPk1hZGUgd2l0aCBQaXhlbHMgdG8gU3ZnIGh0dHBzOi8vY29kZXBlbi5pby9zaHNoYXcvcGVuL1hieHZOajwvbWV0YWRhdGE+CjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTYgM2gxTTYgNGgyTTYgNWgzTTYgNmg0TTYgN2gzTTYgOGgyTTYgOWgxIiAvPgo8L3N2Zz4=");
+}
+
+body *::-webkit-scrollbar-corner {
+  background: silver;
+}
+
+#questionModal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  #questionModal div {
+    width: 90%;
+    padding: 15px;
+  }
+}
     </style>
-  </head>
-  <body>
+</head>
+<body>
+    <img src="stretchhighway.png" alt="hi" width="700px">
+    <h1>etc</h1>
+    <br>
+    <p>ongoing internet posts and writing of trey shilts</p>
+    <br>
+    <p> 
+        <a href="https://bathroomposting.substack.com/">e-mail list</a> | <a href="https://bathroomposting.substack.com/archive">archive</a> | 
+        <a href="https://www.finnishpostcard.com/">finnish postcard site</a> | <a href="#" onclick="document.getElementById('questionModal').style.display='flex'">questions</a>
+    </p>
+    <br>
+    <h3>/*/*/*/*/*/*/*/*/</h3>
+    <br>
     
-</nav>
-  </body>
+    <div id="feed"></div>
+        <script>
+            async function fetchSubstackFeed() {
+                const url = 'https://bathroomposting.substack.com/feed';
+                const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(url)}`);
+                const data = await response.json();
+                
+                const feedContainer = document.getElementById('feed');
+                feedContainer.innerHTML = '';
+        
+                data.items.forEach(item => {
+                    const postElement = document.createElement('div');
+                    postElement.classList.add('post');
+        
+                    // Parse the content to extract only the first image and remove others
+                    const parser = new DOMParser();
+                    const contentDoc = parser.parseFromString(item.content, 'text/html');
+        
+                    // Extract the first image (featured image) and remove all other images
+                    const firstImageElement = contentDoc.querySelector('img');
+                    let firstImage = '';
+                    if (firstImageElement) {
+                        firstImageElement.classList.add('featured-image');
+                        firstImageElement.style.width = '30%';
+                        firstImage = firstImageElement.outerHTML;
+                    }
+        
+                    // Remove all images from the content
+                    contentDoc.querySelectorAll('img').forEach(img => img.remove());
+
+                    contentDoc.querySelectorAll('.image-link-expand').forEach(el => el.remove());
+
+                    postElement.innerHTML = `
+                        <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
+                        ${firstImage} 
+                        <div>${contentDoc.body.innerHTML}</div> 
+                        <p><strong>Published:</strong> ${new Date(item.pubDate).toLocaleDateString()}</p>
+                    `;
+        
+                    feedContainer.appendChild(postElement);
+                });
+            }
+        
+            fetchSubstackFeed();
+        </script>
+
+<div id="questionModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; max-width:90%; width:400px; border-radius:8px;">
+    <h2>anonymously ask a question</h2>
+    <form id="questionForm">
+      <textarea name="message" maxlength="500" required placeholder="Type your question..." style="width:100%; height:100px; resize:none; font-family:inherit;"></textarea>
+      <br><br>
+      <button type="submit">submit</button>
+      <button type="button" onclick="document.getElementById('questionModal').style.display='none'">cancel</button>
+    </form>
+    <p id="thankYouMsg" style="display:none; color:green; font-style:italic; margin-top:10px;">your question was submitted</p>
+  </div>
+</div>
+<script>
+  document.getElementById('questionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formspree.io/f/myzpgqpo", {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    })
+    .then(() => {
+      form.reset();
+      form.style.display = "none";
+      document.getElementById("thankYouMsg").style.display = "block";
+      setTimeout(() => {
+        document.getElementById('questionModal').style.display = 'none';
+        form.style.display = "block";
+        document.getElementById("thankYouMsg").style.display = "none";
+      }, 2000);
+    })
+    .catch(() => {
+      alert("There was a problem submitting your question. Please try again.");
+    });
+  });
+</script>
+</body>
 </html>
+
